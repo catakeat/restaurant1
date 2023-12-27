@@ -7,7 +7,7 @@
     Menu will be here
 </header>
 <div>
-    @yield('curl_multi_getcontent')
+    @yield('content')
 </div>
 
 
