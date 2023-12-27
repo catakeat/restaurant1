@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class RestoController extends Controller
 {
     function index(){
-   echo "Hello from home";
+     return view('home');
     }
 }
