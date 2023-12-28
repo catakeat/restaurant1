@@ -18,3 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get("/home",[RestoController::class,'index']);
+Route::get("/lista",[RestoController::class,'list']);
