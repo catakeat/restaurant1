@@ -14,8 +14,9 @@ use App\Http\Controllers\RestoController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/welcome1', function () {
+    return view('welcome1');
 });
 Route::get("/home",[RestoController::class,'index']);
 Route::get("/lista",[RestoController::class,'list']);
+
