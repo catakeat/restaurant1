@@ -17,6 +17,9 @@ use App\Http\Controllers\RestoController;
 Route::get('/welcome1', function () {
     return view('welcome1');
 });
+Route::post("/welcome1",function(){
+    return view("welcome1");
+});
 Route::get("/home",[RestoController::class,'index']);
 Route::get("/lista",[RestoController::class,'list']);
 

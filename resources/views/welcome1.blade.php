@@ -9,6 +9,10 @@
 <body>
     
 @livewire('counter')
+
+<br><br>
+
+@livewire('citate')
 @livewireScripts
 </body>
 </html>
