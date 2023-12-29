@@ -9,4 +9,5 @@ class Citat extends Model
 {
     protected $guarded = [];
     use HasFactory;
+    protected $table="citates";
 }

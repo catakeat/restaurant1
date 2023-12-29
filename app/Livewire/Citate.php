@@ -3,15 +3,16 @@
 namespace App\Livewire;
 
 use Livewire\Component;
+use app\Models\Citat;
 
 class Citate extends Component
 {
     public $citat;
     public  $citate=[];
 
-    public function mount()
+    public function mount($citat)
     {
-        $this->citat = "Scrie ceva";
+     $this->citat = $citat;
        // $this->citate[]=array();
     }
 

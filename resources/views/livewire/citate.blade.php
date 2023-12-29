@@ -6,12 +6,12 @@
    </form>
 
 
-   @foreach($citate as $citat)
+   {{--@foreach($citate as $citat)--}}
    @if(!empty($citat))
-   <textarea>{{$citat}}</textarea><br><br>
+   <textarea>{{$citat[0]->body}}</textarea><br><br>
    @else
    citat empty
    @endif
-   @endforeach
+   {{-- @endforeach   --}}
 
 </div>

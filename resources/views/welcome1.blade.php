@@ -12,7 +12,10 @@
 
 <br><br>
 
-@livewire('citate')
+
+{{--<livewire:citate citat="citatul"/>--}}
+
+<livewire:citate :citat="$citat"/>
 @livewireScripts
 </body>
 </html>

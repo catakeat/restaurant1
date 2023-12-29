@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RestoController;
+use App\Models\Citat;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,8 @@ use App\Http\Controllers\RestoController;
 */
 
 Route::get('/welcome1', function () {
-    return view('welcome1');
+    $citat = Citat::all();
+    return view('welcome1',compact("citat"));
 });
 Route::post("/welcome1",function(){
     return view("welcome1");
